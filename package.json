@@ -1,8 +1,8 @@
 {
   "name": "react-zod-hook",
-  "version": "1.0.2",
-  "main": "dist/index.cjs.js", 
-  "module": "dist/index.esm.js", 
+  "version": "1.0.3",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
   "repository": {
@@ -25,12 +25,20 @@
     "rollup-plugin-typescript2": "^0.34.0",
     "rollup-plugin-terser": "^7.0.0"
   },
-  "files": ["dist"],
-  "keywords": ["react", "form", "hook", "validation", "zod"],
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "form",
+    "hook",
+    "validation",
+    "zod"
+  ],
   "author": "Fejin RP <rpf.fejin@gmail.com>",
   "license": "MIT",
   "description": "A custom React hook for managing form state and validation with Zod.",
-  "homepage":"https://github.com/ChikkuFejin/react-zod-hook#readme",
+  "homepage": "https://github.com/ChikkuFejin/react-zod-hook#readme",
   "bugs": {
     "url": "https://github.com/ChikkuFejin/react-zod-hook/issues"
   }

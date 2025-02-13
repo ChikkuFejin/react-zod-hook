@@ -6,6 +6,7 @@ A custom React hook for managing form state and validation with Zod.
 
 ```bash
 npm install react-zod-hook
+```
 
 ## Usage for JavaScript (JS)
 
@@ -20,7 +21,7 @@ const schema = z.object({
 });
 
 const MyForm = () => {
-    const { data, onChange, validate, getError } = useForm({
+    const { data, onFormChange, validate, getError } = useForm({
         data: { name: "", email: "" },
         zodSchema: schema,
     });
@@ -38,7 +39,7 @@ const MyForm = () => {
             <input
                 name="name"
                 value={data.name}
-                onChange={(e) => onChange("name", e.target.value)}
+                onChange={onFormChange}
             />
             {getError("name") && <p>{getError("name")}</p>}
             <input
@@ -56,6 +57,7 @@ const MyForm = () => {
 
 export default MyForm;
 ```
+
 
 ## Usage for TypeScript (TS)
 
@@ -85,10 +87,10 @@ const MyForm: React.FC = () => {
 
     return (
         <form>
-            <input
+             <input
                 name="name"
                 value={data.name}
-                onChange={(e) => onChange("name", e.target.value)}
+                onChange={onFormChange}
             />
             {getError("name") && <p>{getError("name")}</p>}
             <input
